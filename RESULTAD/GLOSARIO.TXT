@@ -1,0 +1,3 @@
+
+	Octecto: ocho bit equivalen a un "byte"
+	Parrafo: Un parrafo son 16 octetos

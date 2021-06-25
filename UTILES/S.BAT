@@ -1,0 +1,1 @@
+tlink @configur @periferi @comand @comunica @prueba @nucleo  , con8251 , ,
