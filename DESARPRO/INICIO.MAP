@@ -1,0 +1,24 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 00108H 00109H _TEXT              CODE
+ 0010AH 0010AH 00000H _DATA              DATA
+ 0010AH 0010AH 00000H _BSS               BSS
+
+Detailed map of segments
+
+0000:0000 0109 C=CODE S=_TEXT G=DGROUP M=INICIO.ASM ACBP=48
+0010:000A 0000 C=DATA S=_DATA G=DGROUP M=INICIO.ASM ACBP=48
+0010:000A 0000 C=BSS S=_BSS G=DGROUP M=INICIO.ASM ACBP=48
+
+  Address         Publics by Name
+
+ 0000:0100       _INICIO
+
+  Address         Publics by Value
+
+ 0000:0100       _INICIO
+
+Undefined symbol '_MAIN' in module INICIO.ASM
+Undefined symbol '_PARAMETROS' in module INICIO.ASM
+

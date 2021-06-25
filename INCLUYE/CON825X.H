@@ -1,0 +1,60 @@
+/*	fuente 		con825x.h
+ *
+ *	Objectivo 	definicion de constante para inicializacion
+ *			de perifericos
+ *
+ *	revision	6/oct/1992      	rhc
+ *			18/Mar/1993
+ *
+ */
+
+#define _8088 1
+#if _80286
+#define	PICR0 		0x4010    /* direccion registro cero del 8259 	*/
+#define PICR1		0x4012    /* direccion registro uno del 8259 	*/
+
+#else
+#define	PICR0 		0xC0    /* direccion registro cero del 8259 	*/
+#define PICR1		0xC2    /* direccion registro uno del 8259 	*/
+#endif
+
+#define MASCARA 	0x8f	/* habilita int 4,5 y 6 bit  100011111	*/
+#define MASCARA1 	0xff	/* deshabilita todas las int's 11111111 */
+
+#define PROGMODO	0xd6	/* puerto de control del 8253 		*/
+#define CONTADOR3	0xd4   	/* puerto para contador 3 de 8253	*/
+
+#define ONDA_CUADRADA3 	0xb5	/* bit de programacion del 8253 contador 3
+				   bit 7 y 6 =10 contador 3; bit 5 y 4=11
+				   carga ambos factores Alto y Bajo ;
+				   bit 3, 2 y 1 = 010 modo generador onda
+				   de cuadrada ; bit 0 = 1 contador BCD */
+#define FACTOR		0x0002	/*  factor division de 2 con frecuencia
+				    de entrada de 1 191 666 Hz		*/
+				/* 9600 baud x 64 = 614 400 Hz requerida*/
+				/* 1 191 666 /2 =   595 833 aproximacion*/
+
+#define	P8251CON	0xDA	/* direccion de control puerto serie */
+#define P8251DAT 	0xd8	/* direccion de datos del puerto serie */
+
+#define RESET		0x40	/* bit 6= 1 reset(interno) por programacion */
+#define LISTO_TRANS	0x01	/* bit 1 =1 listo para transmitir */
+#define PAL_CONTROL	0xEF	/* bit 7 y 6= 11 = 2 bit de paro;bit 5 = 0
+				   paridad par; bit 4 = 0 paridad deshalitada;
+				   bit 3 y 2 = 11 8 bit de datos; bit 1 y 0 =
+				   11 factor x 64 */
+#define PAL_OPERACION	0x15	/* D4=1 Reset de banderas; bit 2 y 0 = habili-
+				   ta Tx y Rx */
+#define 	REC51	0x25	/* interrupcion nivel 5 para recepcion   */
+#define 	TRA51	0x26	/* interrupcion nivel 6 para transmision */
+#define 	RELOJ	0x24	/* interrupcion nivel 4 para reloj 	 */
+#define 	NMIT	0x02	/* interrupcion no mascarable 		 */
+#define 	SIST_ES	0x11	/* interrupcion para el sistema de ES    */
+#define 	NUCLEO  0x12	/* interrupcion para nucleo del sistema  */
+#define       PARASITA	0x27	/* interrupcion parasita del sistema	 */
+
+#define VERDAD 		1
+#define FALSO  		0
+#define TAMANO 		64	/* tamano del buffer */
+
+
