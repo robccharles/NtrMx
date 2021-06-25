@@ -1,0 +1,21 @@
+#	Fuente:	 	manual.mak
+#
+#	Objectivo:	Respaldo de los archivos WP del manual
+#
+#
+# 	Revisi¢n:	5/Julio/1994
+#
+
+#
+manual.wp: ..\manual\DRVHTR.WP ..\manual\XENVS.WP ..\manual\GSDS.WP \
+	    ..\manual\INPOOL.WP ..\manual\CAPIDEL.WP ..\manual\XENVM.WP \
+	    ..\manual\XATTS.WP ..\manual\ESIGIT.WP ..\manual\PRESENTA.WP \
+	    ..\manual\XATT.WP ..\manual\MANUNTRM.WP ..\manual\XATTM.WP \
+	    ..\manual\EJEMDEAP.WP ..\manual\FIT.WP ..\manual\XDEMM.WP \
+	    ..\manual\INISYS.WP ..\manual\DESADEPR.WP ..\manual\TACHE.WP\
+	    ..\manual\XLIMB.WP  ..\manual\GETCH.WP ..\manual\PUTCHAR.WP
+
+# incluye todos las dependencia de comandos
+!include "primiti.mak"
+
+

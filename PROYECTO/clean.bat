@@ -1,0 +1,1 @@
+make -fntrmxc.mak

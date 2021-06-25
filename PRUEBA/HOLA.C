@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+main()
+{
+        printf("Hola MSDOS VIRTUAL\n");
+}
+/*
+printf(char * p)
+{
+
+}
+*/
+

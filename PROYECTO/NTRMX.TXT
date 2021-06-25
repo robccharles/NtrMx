@@ -1,0 +1,41 @@
+
+
+Nombre del archivo a filtrar: 3zSS+TmK6{Z3.QYY.U.FPX]xtt&P%PYYOP&PYYP$PYYPPYYP'PtYY$PPgYYTPPZYY@+@V@3Fd|%^UFF
+F]UVFV3&F@@3&7^]V3tF|^UVWFPYYPYYPYYPYY`tF~thF-1=wD.,9CHJOTnP8Y9P.Yz~uP#YYv7Y~t3
+3G N|F|@_^]UVPYYPYYPYF T >F uPYYZ3 X FH   YH u6V 36 :YYuF| F ?stl^]UVW3X Gd|vYF
+vt F<uF_^]UVvST T uT ?u3=T T FT uT ?uFT ?u3^]U>V ~6 YJ >V ~6 YJ 6 YL P6 YYuPMYY
+PCYYP9YY6J 6L DYYJ J ]U]U<PYY]UV>V uUPYY@6 Y=t%PYY6 YYPYYVYPYY^]UPYY]UVWPYYF%N 
+N N N PPYYN P TFFFP >P R R R P P R PP PGP PGP PGPR P R R P R W\Y_^]U>Pt6PYPNPYY
+PYYPvYY*PlYY,PbYY5PXYYPY7PFYY]UVP6YY31:$YYPYYRYYPYYF|^]@@;u?@ V;uPY#!@@ %^V=t^U
+^&P2Y=uF^&?u]UFPY=t]JPLYU;u>uF/H;t;u;u#FH;u];uH;uVWURP@@ uXZ]_^VWURP6XZ]_^VWURP
+@XZ]_^U)N]U/^]UD^]U3A^]UJ^V]U3G^]UM]URQS^VN5[YZ]USF^;[]UQS^N8[Y]UVWPXYYFPYPvYY!
+!+FP*YYP YYPYYPYY+F!VWvDPCYPYYF^VFRPYYPYYtY"PYYDPY$PYYt=Y&PYYt,Y\  F FD^(P\YY &
+wY*PFYY &wY,P0YY &wY.PYY &wY0PYY|2PYYt_^]UVW3PYvvY:PYFP`Y PY3'FPvYYFvY PYF|34FP
+vRYYFF=~FPpY.PfYF|G}]POY_^]UVS^^[^]UVS3^^[^]U~ t~t~t~:u3]UVW3G~0|~9PFZ&~a|~fPFZ
+G^Fu_^]UVW~v<u=u3 FG:tD:E}_^]UVWv3Fv*FF=tNPY PYPYx}FFGFPYPY~u^?u3F_^]UVWv%VYWY_
+^]UVv%~0PyY^]UVvF%PYVY^]UQ@FPFPFPY]UVWv~_^]QRUVW>%UGG3EMtG@uEuPS.Gu[XPS.6gtt'[X
+QRUVW''Wu?ut\w]PSQ+.&&G-&GGu-WGPXt&&WY[XOGRUVW>%Uw3|LtM|&E&UtG@uC=PS6g.+WG;ut#P
+&GGGuGG[XPSQ.GY[XPSQRW.&>OtGsO+G_ZY[XUWVPRQS.>t@=stU:sJ+w[YZX^_N]O++tO&F&F[&YZX
+^_f]GPYhPYxPPYY_PYVPYPYY^U>uP3PP>tPPYYFvY=u3PvYY]UP3PPlPYYPYYPPyYYFvYPPbYYFPYYv
+vYPPAYYFPYYvUYKPYY]PR @Z3,&.H@PSR @Z[XPS R@Z3YP3>&.HPS3g R@Z3>&.H.$t_u,g_^]ZY[X
+.-ts@XSQRUVW'W3G)u4t&MOG@u*_DuK_u8)WwGtND9utu]w9stuw\t]OVRSQPWU.Q@QQ+QQ&&O&Gz&O
+&GR&O&G&O&G*&O&G&O]_XY[Z^PSQRUVWS.Gt@Iu[_^]ZY[X^&&DG&DG&DG&l&<&5&u&mo&DG&F&F&F&
+t&t&|&5u&Fu&F&FchPSQRUVW.''Wt$.u[XQRUVW'WPSQVW>tD8s|u\w|tw]\\wtjPSQVWwu6ut|GG=P
+SQVWu06t7+s<+ut9r]\w_^Y[X]+\wPSQVWwu'6u3+3GDtu|GG~3EGq.SP.GuX[VWEMut#EDwtG@uC_^
+X[GG&2/&S3G[UQFFVY]Y\inicioaENcleo de Tiempo Real MX 1.0 (c)1992            CIT
+EDI-IPN  Tarea 0 del sistema NTRMX>Hkkshntv}gu1cayudacargacduermeejecutaxllista
+ttareasmemoriaInterpretador de comandos del NTRMX ver 1.1 (c) 1993&/h Ayuda par
+a el comando Uno ...........el comando Uno .......... el comando UnoEstado de l
+a memoria  Falta el parmetro de nmero de pulsosLa tarea duerme por un tiempo de
+:  ticserror en argumento del tiempoError en el comandoCarga el program desde l
+a PC<ESC><c>SHELL.C Nov 12 1993 22:24:54 Error: no se ha cargado codigo para la
+ tarea Men de ayudaCarga un programaCarga un programaDuerme un procesoCrea y ej
+ecuta una tareaCrea y ejecuta una tareaLista la memoriaLista la memoriaLista lo
+s descriptores de tareas creadas en NTRMXLista los descriptores de tareas cread
+as en NTRMXLista la ocupacin de memoria de las tareaslista de comandos de shell
+ del NTRMX: segmento de zona de datos: Tarea Estado Prio SS SP IP CS DS ES     
+  :  TAR1 6TAR2 WMicro Nucleo NTRMX1.1 Memoria asignada a:Los datos y cdigo del
+ NTRMX:     7.0K  SEG = La Zona de Datos del Sist NTRMX: 4.75K  SEG = La pila d
+el Sistema NTRMX:       2.75K  SEG =  Los programas de aplicacion:    17.5K SEG
+ = 3A00TASK Pfinal         !!!!!                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@ 

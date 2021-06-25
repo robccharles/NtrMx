@@ -1,0 +1,4 @@
+
+COMUNICACION SERIE
+ 9600 bits/s, 8 bits de datos , no paridad ,2 bits de paro USANDO COM1
+-EEsa ta es una pruebaunodostresseis-
