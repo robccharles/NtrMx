@@ -1,0 +1,17 @@
+
+Ligas
+
+Control puerto Serie
+
+
+Gywin
+
+http://stackoverflow.com/questions/25329129/batch-script-to-read-write-data-using-com-port
+
+
+Linux
+http://unix.stackexchange.com/questions/22545/how-to-connect-to-a-serial-port-as-simple-as-using-ssh
+
+
+Equivalencias Linux DOS
+http://tldp.org/LDP/abs/html/dosbatch.html
