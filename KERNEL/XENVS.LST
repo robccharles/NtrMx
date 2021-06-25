@@ -1,0 +1,222 @@
+Turbo Assembler	 Version 2.01	     11/20/92 23:39:58	    Page 1
+xenvs.ASM
+
+
+
+      1				     ;	     Archivo Fuente	     xenvs.asm
+      2				     ;
+      3				     ;	     Objetivo		     Envia una se¤al
+      4				     ;
+      5				     ;	     Revision		     18/Nov/1992
+      6				     ;
+      7				     ;	     Elaboro		     Herrera Charles Roberto
+      8
+      9					     DOSSEG
+     10	0000				     MODEL   tiny
+     11					     include  ..\h\constant.asm
+1    12				     ;	     Archivo Fuente	     constantes.asm
+1    13				     ;
+1    14				     ;	     Objetivo		     Define las	constantes del nucleo
+1    15				     ;				     Constantes	que utiliza el nucleo en las
+1    16				     ;				     llamadas al sistema
+1    17				     ;
+1    18				     ;	     Revision		     13/Nov/1992
+1    19				     ;
+1    20				     ;	     Elaboro		     Herrera Charles Roberto
+1    21
+1    22				     ;	   despach equ 1*3+4
+1    23
+1    24
+1    25	      =	0002		     data_1e	     equ     2			     ;	     0000:0002=26Ah)
+1    26	      =	0004		     data_2e	     equ     4			     ;	     0000:0004=756h)
+1    27	      =	0006		     data_3e	     equ     6			     ;	     0000:0006=70h)
+1    28	      =	0000		     data_4e	     equ     0			     ;	     05B9:0000=0C405h)
+1    29	      =	0002		     data_5e	     equ     2			     ; Apuntador de Prioridades
+1    30	      =	0004		     data_6e	     equ     4			     ; Alarma Siguiente
+1    31	      =	0006		     data_7e	     equ     6			     ; Apuntador de Alarma
+1    32	      =	0008		     data_8e	     equ     8			     ; Senales recibidas
+1    33	      =	000A		     data_9e	     equ     0Ah		     ; Numero de tareas
+1    34	      =	000C		     data_10e	     equ     0Ch		     ; Apuntador de senales
+1    35	      =	000E		     data_11e	     equ     0Eh		     ; Apuntador de buzones
+1    36	      =	0010		     data_12e	     equ     10h		     ; Apuntador de banderas
+1    37	      =	0012		     data_13e	     equ     12h		     ; Apuntador de "pools"
+1    38	      =	00D4		     data_14e	     equ     0D4h		     ;	     05B9:00D4=5A5Fh)
+1    39	      =	00D6		     data_15e	     equ     0D6h		     ;	     05B9:00D6=75E8h)
+1    40	      =	1000		     data_16e	     equ     1000h	 ; 0	     ; Zona de datos del sistema
+1    41	      =	0004		     data_17e	     equ     4			     ;	     7146:0004=0D900h)
+1    42	      =	0006		     data_18e	     equ     6			     ;	     7146:0006=0C283h)
+1    43	      =	0008		     data_19e	     equ     8			     ;	     7146:0008=0B803h)
+1    44	      =	00D4		     data_20e	     equ     0D4h		     ;	     7146:00D4=2036h)
+1    45	      =	00D6		     data_21e	     equ     0D6h		     ;	     7146:00D6=0Ch)
+1    46	      =	0000		     data_16	     equ     0			     ; direccion cero.
+     47
+     48	0000				     DATASEG
+     49
+     50	      =	00FD			     PASANTE	     EQU     0FDh
+     51	      =	0001			     ACTIVA	     EQU     01
+     52	      =	0040			     CICLO	     EQU     40h
+     53
+     54					     EXTRN   loc_3:near
+     55					     EXTRN   sub_4:near
+     56	0000				     CODESEG
+     57
+Turbo Assembler	 Version 2.01	     11/20/92 23:39:58	    Page 2
+xenvs.ASM
+
+
+
+     58	0000			     loc_97:
+     59	0000			     esperaSenal:
+     60					       ; Hay tareas que	esta esperando esta se¤al.
+     61
+     62	0000  51			     push    cx			     ; guarda el resto del contexto para
+     63	0001  52			     push    dx			     ; preparacion de cambio de	contexto
+     64	0002  55			     push    bp
+     65	0003  56			     push    si
+     66	0004  57			     push    di
+     67
+     68	0005  8B 3E 1000		     mov     di,ds:data_16e	     ; Obtiene PRT de tarea en
+     69									     ;ejecuci¢n
+     70					     ; Guarda el apuntador de la pila de la tarea en
+     71					     ; ejecucion y campia a la pila del	sistema(kernel)
+     72	0009  83 EF 04			     sub     di,4		     ; di apunta a campo SS:SP
+     73	000C  89 25			     mov     [di],sp		     ; Guarda SP
+     74	000E  8C 55 02			     mov     [di+2],ss		     ; Guarda SS
+     75	0011  8C D8			     mov     ax,ds		     ; SS apunta a ZDS
+     76	0013  8E D0			     mov     ss,ax		     ;
+     77	0015  BC 00D4			     mov     sp,0D4h		     ; SP pila del sistema
+     78					     ; Obtiene el apuntador al final lista y borra los
+     79					     ; enlaces de la se¤al
+     80	0018  8B 7F 04			     mov     di,[bx+4]		     ; Obtiene de la se¤al el PTR
+     81									     ; a la tarea final	de la lista
+     82	001B  B8 0000			     mov     ax,0		     ; Borra los PTR de	la tarea
+     83	001E  89 47 02			     mov     [bx+2],ax		     ; al principio de la cola
+     84	0021  89 47 04			     mov     [bx+4],ax		     ; al final	de la cola
+     85					     ; Borra los enlaces de la siguiente tarea y pone en
+     86					     ; estado activo la	tarea que esperaba la se¤al
+     87	0024			     loc_98:				     ;
+     88	0024			     eliminaTarea:
+     89	0024  33 C0			     xor     ax,ax		     ; Borra los enlaces de tarea
+     90	0026  89 05			     mov     [di],ax		     ; PTR de comunicacion
+     91	0028  89 45 06			     mov     [di+6],ax		     ; enlace de comunicacion anterior
+     92	002B  83 4D 0C 01		     or	     word ptr [di+0Ch],ACTIVA ;	activa la tarea
+     93					     ; Elimina de la cola de alarma si la tarea	esperaba
+     94					     ; la se¤al	con espera m xima (o alarma)
+     95	002F  8B DF			     mov     bx,di		     ; Guarda temporalmente PTR	de
+     96									     ;la se¤al
+     97	0031  83 EB 06			     sub     bx,6		     ; Apunta a	la alarma de tarea
+     98	0034  F7 07 FFFF		     test    word ptr [bx],0FFFFh    ; Espera Alarma
+     99	0038  74 09			     jz	     loc_99		     ; Salta si	No espera alarma
+    100	003A  F6 47 12 40		     test    byte ptr [bx+12h],CICLO ; Es tarea	ciclica
+    101	003E  75 03			     jnz     loc_99		     ; Salta si	es tarea ciclica
+    102	0040  E8 0000e			     call    sub_4		     ; Se elimina la tarea de la
+    103									     ; cola de alarmas
+    104					     ; Prueba si hay mas tareas	que esperan esta se¤al
+    105	0043			     loc_99:				     ;
+    106	0043			     sinAlarma:
+    107	0043  87 45 04			     xchg    ax,[di+4]		     ; Borra enlace siguiente
+    108	0046  0B C0			     or	     ax,ax		     ; Prueba si enlace	siguiente
+    109	0048  8B F8			     mov     di,ax		     ; es nulo y lo copia en di
+    110	004A  75 D8			     jnz     loc_98		     ; Si no cero elimina la tarea
+    111									     ; de cola de tareas que
+    112									     ; esperan esta se¤al
+    113	004C  E9 0000e			     jmp     loc_3		     ; Fin de la lista y de la
+    114									     ; primitiva
+Turbo Assembler	 Version 2.01	     11/20/92 23:39:58	    Page 3
+xenvs.ASM
+
+
+
+    115
+    116	004F			     loc_100:
+    117	004F			     xenvs:
+    118	004F  1E			     push    ds			     ;prologo
+    119									     ;pricipio de primitiva XENVS
+    120	0050  06			     push    es
+    121	0051  50			     push    ax
+    122	0052  53			     push    bx
+    123					     ; obtiene apuntador de la se¤al
+    124	0053  D1 E3			     shl     bx,1		     ; NUNSIG*2
+    125	0055  8B C3			     mov     ax,bx		     ; respalda	NUMSIG*2
+    126	0057  D1 E3			     shl     bx,1		     ; NUNSIG*4
+    127	0059  03 D8			     add     bx,ax		     ; NUMSIG*6
+    128	005B  2E: 8E 1E	1000		     mov     ds,cs:data_16e	     ; Obtiene la ZDS
+    129	0060  03 1E 000C		     add     bx,ds:data_10e	     ; BX apunta a la se¤al(NUMSIG)
+    130					     ; Cambia el estado	de la se¤al
+    131	0064  80 27 FD			     and     byte ptr [bx],PASANTE   ; pone se¤al pasante
+    132	0067  80 0F 01			     or	     byte ptr [bx],ACTIVA    ; pone la se¤al activa
+    133					     ; Prueba la cola de tareas	que esperan la se¤al
+    134
+    135	006A  F7 47 04 FFFF		     test    word ptr [bx+4],0FFFFh  ; prueba PTR final
+    136	006F  75 8F			     jnz     loc_97		     ;Si la cola no esta vacia
+    137					     ; termina primitiva
+    138	0071  5B			     pop     bx			     ; epilogo
+    139	0072  58			     pop     ax
+    140	0073  07			     pop     es
+    141	0074  1F			     pop     ds
+    142	0075  CF			     iret			     ; returna de Interrupcion
+    143
+    144					     end
+Turbo Assembler	 Version 2.01	     11/20/92 23:39:58	    Page 4
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "11/20/92"
+??filename			  Text	 "xenvs	  "
+??time				  Text	 "23:39:57"
+??version			  Number 0201
+@CodeSize			  Text	 0
+@Cpu				  Text	 0101H
+@DataSize			  Text	 0
+@FileName			  Text	 xenvs
+@Model				  Text	 1
+@WordSize			  Text	 2
+@code				  Text	 DGROUP
+@curseg				  Text	 _TEXT
+@data				  Text	 DGROUP
+ACTIVA				  Number 0001
+CICLO				  Number 0040
+PASANTE				  Number 00FD
+data_10e			  Number 000C
+data_11e			  Number 000E
+data_12e			  Number 0010
+data_13e			  Number 0012
+data_14e			  Number 00D4
+data_15e			  Number 00D6
+data_16				  Number 0000
+data_16e			  Number 1000
+data_17e			  Number 0004
+data_18e			  Number 0006
+data_19e			  Number 0008
+data_1e				  Number 0002
+data_20e			  Number 00D4
+data_21e			  Number 00D6
+data_2e				  Number 0004
+data_3e				  Number 0006
+data_4e				  Number 0000
+data_5e				  Number 0002
+data_6e				  Number 0004
+data_7e				  Number 0006
+data_8e				  Number 0008
+data_9e				  Number 000A
+eliminaTarea			  Near	 DGROUP:0024
+esperaSenal			  Near	 DGROUP:0000
+loc_100				  Near	 DGROUP:004F
+loc_3				  Near	 DGROUP:---- Extern
+loc_97				  Near	 DGROUP:0000
+loc_98				  Near	 DGROUP:0024
+loc_99				  Near	 DGROUP:0043
+sinAlarma			  Near	 DGROUP:0043
+sub_4				  Near	 DGROUP:---- Extern
+xenvs				  Near	 DGROUP:004F
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+  _TEXT				  16  0076 Word	  Public  CODE
+
