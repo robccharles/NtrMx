@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)">
+	<meta name="created" content="00:00:00">
+	<meta name="changed" content="00:00:00">
+	<style type="text/css">
+		@page { margin: 1in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+	</style>
+</head>
+<body dir="ltr" lang="es-MX">
+<p style="margin-bottom: 0in; line-height: 100%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%; page-break-before: always" align="left">
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%" align="left"><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">CAPITULO
+I</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">La
+tarea fundamental de cualquier sistema operativo es la de supervisión
+de los recursos y funciones del equipo de computo. Dentro de Estas
+funciones se incluye: proporcionar una interfase entre la computadora
+y el usuario, la administración del sistema de E/S, creación y
+manejo de archivos para almacenar y operar datos, manejo de la
+memoria del usuario y del sistema y proporcionar un método para la
+ejecución de programas.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>COMO
+INICIAR LA UTILIZACION DEL NUCLEO NTRMX.</b></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">El
+primer paso en la utilización de NTRMX, es familizarse con su
+estructura y los distintos archivos que lo conformas. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">La
+estructura del NTRMX tiene tres partes básicas:</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>Núcleo
+del sistema.</b></i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+La estructura standard comprende: Reloj de tiempo real, Manejador de
+procesos e interrupciones, Manejo de Memoria y comunicación.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>Los
+manejadores de Entradas y Salidas</b></i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">.
+El cual depende del la circuitería donde se va implementar el
+sistema. Tiene manejadores de caracteres para puertos serie y
+manejadores para puertos de entrada y salida paralelo. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><img src="data:image/png;base64,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" name="Object0" width="378" height="864" align="left">
+  <br clear="left">
+
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Fig.
+1.1 	Estructura del NTRMX.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>El
+interpretador de comandos</b></i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">.
+El cuál facilita el desarrollo y monitoreo de los programas de 
+aplicación. La aplicación no se considera como una parte adicional
+porque es el problema especifico que se desea resolver, depende de la
+capacidad de uso de la estructura base del núcleo y de los
+manejadores de entrada y salida. Aunque se da ejemplos base que serán
+útiles para desarrollar aplicaciones más complejas.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Para
+cada una de estas partes se tiene un conjunto de archivos que nos
+permiten diferenciar a que parte pertenece. Y están agrupados en
+subdirectorios.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>VIAJE
+A TRAVES DE LOS ARCHIVOS DEL NTRMX.</b></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Archivos
+de librerías del Núcleo.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><font color="#000000">
+    </font>
+</p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000">  <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">CON825X.H
+	Definiciones de Datos y Tipos para inicialización	de periféricos.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><font color="#000000">
+      <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">INICIALI.H
+	Definición de las estructuras del bloque de creación de tarea y
+del descripción de Código.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><font color="#000000">
+      <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">PRIMITIV.H	Define
+las funciones prototipo para las llamadas al sistema o primitivas que
+utiliza el núcleo. Constantes utilizadas en las llamada de las
+primitivas y el valor de los saltos indirecto.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><font color="#000000">
+      <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">PROCESOS.H	Define
+las estructuras de datos que utiliza el Núcleo de Tiempo Real MX
+(NTRMX).</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000">  <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">NTRMX.LIB
+ 	Contiene la librería, en ensamblador, de  todas las llamadas del
+NTRMX. Las cuales pueden ser utilizadas en lenguaje C. (librería de
+llamadas).</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Archivos
+de  Entrada y Salida</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">STDIO.H
+	Define las funciones prototipo de Entrada y Salida.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">STDIO.LIB	Contiene
+la librería, en ensamblador, de todas las funciones de llamadas al
+sistema de Entradas y Salidas.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Archivos
+de Ejemplos de Aplicación.</font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">HOLA.C	Ejemplo
+del clásico programa "hola" que envía un letrero a la
+salida estandard, -puerto serie.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">ENVIA.C	Envía
+un mensaje en forma periódica a la tarea </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>espera.c</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">ESPERA.C	Recibe
+el mensaje que envía la tarea </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>envia.c</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+y lo despliega a la pantalla -salida estandard.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">LIGA.BAT	Archivo
+"batch" que hace el ligado de los archivos: fuente.obj,
+inicio.obj y las librerías ntrmx.lib, cs.lib y stdio.lib.</font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Archivos
+de herramientas o utilerías</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">LINEA.EXE	Monitor
+de depuración. Permite cargar y ejecutar programas en el sistema
+digital. Para mayores detalles consultar el manual de Monitor de
+Depuración.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">TASM.EXE	Turbo
+ensamblador. Ensamblador de programas.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">TLIB.EXE	Turbo
+librerías. Permite la creación de librerías.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">TCC.EXE	Compilador
+de C en línea versión de Turbo C. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">TC.EXE	Turbo
+C. Compilador de C en ambiente de ventanas.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">TLINK.EXE	Ligador
+de programas Turbo. Permite el ligado de programas objetos y
+librerías para crear programas ejecutables.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">MAKE.EXE	Utilería
+de "Makefiles". Permite la realización de archivos de
+proyectos. En él cual se indica la dependencia de archivos y la
+compilación condicional con respecto a las última fecha de
+modificación de los archivos fuentes. Por lo que "make"
+solo realiza el ensamblado o compilación de los archivos que hallan
+sido modificados.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">GREP.EXE	Utilería
+que imprime líneas que coincidan con un </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>patrón</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+en un archivo. Permite la localización de patrones de palabras en un
+archivo.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">PP.EXE	Impresión
+Formateada. Permite la impresión de archivos con el encabezado de
+fecha y nombre de archivo, también numera las páginas.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="margin-left: 1in; text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Para
+familiarizarse con el NTRMX se tiene una configuración de ejemplo
+con una aplicación. Los pasos para correr este ejemplo son:</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">HOLA.C
+</font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Por
+ejemplo, el ligado del archivo fuente hola.c, después de haber
+obtenidos los archivos objetos es:</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">&gt;TLINK
+/T /m /s inicio.obj hola.obj, hola ,  ,   ..\E_S\stdio.lib
+..\lib\ntrmx.lib c:\tc2\lib\cs.lib</font></font></font></p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Archivo
+de salida -&gt; 	</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>hola.com</b></i></font></font></font></p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">El
+programa </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>hola.com</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+puede ser cargado y ejecutado en el ambiente del NTRMX utilizando los
+siguientes comandos:</font></font></font></p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>&amp;carga</b></font></font></font></p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Carga
+el programa desde la PC</b></font></font></font></p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>&lt;ESC&gt;</b></font></font></font></p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000"> <font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>c	</b></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%" align="left"><br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>&gt;DAME
+EL NOMBRE DEL ARCHIVO EN BINARIO</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>hola.com</b></i></font></font></font></p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>TRANSMITIENDO
+EL ARCHIVO </b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>hola.com</b></i></font></font></font></p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>LA
+LONGITUD DEL ARCHIVO ES 344 </b></font></font></font>
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>ARCHIVO
+TRASMITIDO TOTALMENTE</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 100%" align="left">
+<font color="#000000">    </font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>&amp;ejecuta</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Al
+archivo hola.c al momento de su ejecución manda un mensaje a la
+pantalla en forma periódica.	</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">PRESENTACION
+DE NTRMX</font></font></font></p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Estructura
+del Núcleo de tiempo Real NTRMX </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">El
+kernel del NTRMX esta conformado de cuatro partes fundamentales: </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 2in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">1)	Control
+y planificación de tareas.</font></font></font></p>
+<p style="text-indent: 2in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">2)
+	El manejador del reloj de tiempo real e interrupciones.</font></font></font></p>
+<p style="text-indent: 2in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">3)	El
+mecanismo de mensajes y señales. </font></font></font>
+</p>
+<p style="text-indent: 2in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">4)	La
+administración de memoria.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">El
+núcleo es completado con otros mecanismos que nos facilitan los
+servicios que ofrece el núcleo, estos son:</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 2in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"> ▴ <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">	Nivel
+bajo de entrada y salidas.</font></font></font></p>
+<p style="text-indent: 2in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"> ▴  <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Un
+interpretador de comandos("shell").</font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">La
+estructura del sistema NTRMX se observa en la figura 1.1.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">SERVICIOS
+QUE OFRECEN EL NTRMX.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">El
+núcleo de tiempo real(NTRMX) es un sistema operativo que nos permite
+ejecutar multitareas en el ambiente del sistema digital. En él se
+facilita el desarrollo de la programación de tiempo real. Los
+principales servicios que ofrece el NTRMX son:	</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">	
+a)	</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>EL
+control de tareas</b></i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+que se ejecuten en paralelo es suministrada por planificador.
+Ejemplo: la función creaTarea().</font></font></font></p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">b)
+	</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>El
+control de tiempos y alarmas.</b></i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+Ofrecido por servicios de manejador de reloj. Ejemplo la función
+duerme().</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">c)	</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>Los
+servicios de sincronización</b></i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+se dan a través de un manejador de señales. El intercambio de
+información entre las tareas es a través de mensajes que se
+depositan en buzones. Ejemplos de funciones: enviaSenal(),
+esperaSenal(), enviaMensaje(), esperaMensaje().</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">d)	</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>El
+manejos de ocupación y disponibilidad de la memoria</b></i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+se realiza por un mecanismo de control de "pozos" de
+memoria y se ofrecen tres funciones básicas: Inicialización de
+memoria </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>inPool()</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">,
+petición de memoria </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>asignaMem()</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+y liberación de memoria </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>libMem()</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">e)	</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>Para
+la comunicación externa de control y monitoreo.</b></i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+El sistema de E/S ofrece los servicio de: lectura de un caracter
+</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>getch()</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">,
+escritura de un caracter </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>putchar()</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">,
+lectura de una cadena. El sistema de lectura es buffereado.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">CARACTERISTICAS
+DEL NTRMX</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Las
+características técnicas del sistema operativo de tiempo real NTRMX
+son: </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"> <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		▴	El
+sistema operativo esta destinado a  la familias los microprocesadores
+INTEL 80X86. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"> <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		▴	Ocupa
+un espacio de memoria de aproximadamente 10K octetos.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000">▴ <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">	Maneja
+de 1 a 255 tareas, señales, buzones, y "pozos" de memoria.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"> <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		▴	El
+código del sistema operativo es independiente de su posición en
+memoria. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%; page-break-before: always" align="left">
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">COMANDOS
+DEL "SHELL".</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Para
+tener el sistema funcionando en un forma mínima y comunicándose con
+una computador IBM-PC. Donde el usuario puede cargar y depurar sus
+programas. El NTRMX cuenta con un intrepretador de comandos("shell").
+Los servicios que ofrece esta tarea son: Inicialización y prueba del
+sistema, lectura de memoria, cargar el código de una tarea desde una
+PC., ejecutar la tarea cargada en memoria. Ver el estado de las
+tareas y otros servicios que se explicará su uso en esta sección.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">En
+la sintaxis las palabras y símbolos que se imprimen en tipo normal
+son argumentos y se deben sustituir por nombres y/o argumentos
+numéricos. En los ejemplos, toda la información que va después del
+signo de número(#) son comentario. La diagonal "/" que se
+puede utilizar uno de las dos formas del comando.</font></font></font></p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Comando:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>ayuda
+	--Ayuda del "shell"</b></i></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Sintaxis:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>ayuda</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Ejemplos:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>ayuda</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		#
+Lista los comandos del</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+"shell" del NTRMX.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Lista
+todos los comandos del interpretador de comandos ("shell")
+del NTRMX.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Comando:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>carga
+	--Carga un archivo ejecutable </b></i></font></font></font>
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Sintaxis:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>c/carga&lt;cr&gt;
+archivo</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Ejemplos:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>carga&lt;cr&gt;A.com</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">	#
+Carga el archivo A.com</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+a la memoria del sistema</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+digital.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Este
+comando es un cargador de programas en formato "COM". Todos
+los archivos en formato "COM" inician en la dirección
+0100h. El archivo es cargado en la dirección de la memoria RAM
+</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>SEG:0100h</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">,
+donde el valor de </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>SEG</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+es el valor que se asigna cuando se solicita memoria para este
+proceso.</font></font></font></p>
+<p style="margin-left: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Se
+envía un mensaje de error cuando el archivo que se va a cargar no se
+encuentra.</font></font></font></p>
+<p style="margin-left: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Durante
+la ejecución del comando se despliega en pantalla el porcentaje del
+programa que ha sido cargado en memoria.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Comando:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>duerme
+	--Duerme el "shell"</b></i></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Sintaxis:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>duerme
+[tics]</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Ejemplos:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>duerme
+10</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		#
+Para la ejecución del </font></font></font>
+</p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+"shell" durante 10 tic's</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+del reloj del sistema.</font></font></font></p>
+<p style="text-indent: 3.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">El
+comando duerme se utiliza para bloquear por un tiempo determinado la
+operación del "shell", después el shell continua su
+operación normal. Equivale a la función "sleep" de Unix.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Comando:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>ejecuta
+	--Ejecuta una tarea</b></i></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Sintaxis:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>x/ejecuta</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Ejemplos:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>ejecuta
+</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		#
+Ejecuta la última tarea 								# carga en memoria. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Ejecuta
+la última tarea cargada en memoria, si no existe ninguna tarea en
+memoria el comando envía un mensaje de error. Para saber cuantas
+tareas se encuentra en memoria y su estado consultar el comando
+"tareas".		</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Comando:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>tareas
+	 --Tareas en memoria</b></i></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Sintaxis:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>t/tareas</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Ejemplos:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>tareas
+</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		#
+Despliega el estado de</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+las tareas que guardan en</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+memoria. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">El
+comando </font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i>tareas</i></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">
+nos despliega en pantalla el estado que guardan todos los tareas
+activas en memoria.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Comando:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>lista
+	 --Listar memoria</b></i></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Sintaxis:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>l/lista
+[seg][offset]</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Ejemplos:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>lista
+100 </b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">	#
+Lista memoria a partir de 								# la dirección 0100h del</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+segmento actual.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>lista
+40:100 </b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">	#
+Lista memoria a partir de 								# la dirección 40:0100h. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>lista
+ </b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		#
+Lista memoria a partir de 								# la última dirección</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+listada. </font></font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Comando:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><i><b>memoria
+     --Ocupación de la memoria</b></i></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Sintaxis:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>memoria</b></font></font></font></p>
+<p style="text-indent: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>Ejemplos:</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		</font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3"><b>memoria
+</b></font></font></font><font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		#
+Despliega el estado de</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+que guardan la ocupación</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">#
+de memoria en NTRMX.</font></font></font></p>
+<p style="text-indent: 4in; margin-bottom: 0in; line-height: 150%" align="left">
+<br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 2.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Despliega
+el estado de memoria libre y ocupada en general y particular para las
+tareas del NTRMX.</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 150%; page-break-before: always" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Basura:</font></font></font></p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Control
+de procesos</font></font></font></p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Creación
+de tareas</font></font></font></p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Temporiazación
+y alarmas</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 1in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Sincronización
+y Mensajes</font></font></font></p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Envio
+y recepción de señales</font></font></font></p>
+<p style="margin-left: 1.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"><font face="Roman 10cpi"><font style="font-size: 12pt" size="3">Envio
+y recepción de mensajes</font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 150%" align="left"><br>
+
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 150%" align="left">
+<font color="#000000"> <font face="Roman 10cpi"><font style="font-size: 12pt" size="3">		▴	La
+identificación de los objetos del sistema: tareas, señales,
+buzones, y zonas de memoria; será través de números de
+identificación para hacerlos independientes de su dirección en
+memoria. Todo esto hace el código fácilmente relocalizable.</font></font></font></p>
+
+</body></html>
